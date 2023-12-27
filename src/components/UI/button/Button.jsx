@@ -1,9 +1,9 @@
 import { Button as MuiButton, styled } from "@mui/material";
 import React from "react";
 
-export const Button = ({ onClick, children, ...props }) => {
+export const Button = ({ onClick, children, type, ...props }) => {
   return (
-    <StyledButton onClick={onClick} {...props}>
+    <StyledButton type={type} onClick={onClick} {...props}>
       {children}
     </StyledButton>
   );
@@ -21,8 +21,8 @@ const StyledButton = styled(MuiButton)(props => ({
   gap: "10px",
   ":hover": {
     background: "#CB11AB",
-    webkitBoxShadow: "-2px -1px 19px -1px rgba(0,0,0,0.73)",
-    mozBoxShadow: "-2px -1px 19px -1px rgba(0,0,0,0.73)",
-    boxShadow: "-2px -1px 19px -1px rgba(0,0,0,0.73)",
+    webkitBoxShadow: "-2px -1px 10px -1px rgba(0,0,0,0.73)",
+    mozBoxShadow: "-2px -1px 10px -1px rgba(0,0,0,0.73)",
+    boxShadow: "-2px -1px 10px -1px rgba(0,0,0,0.73)",
   },
 }));
