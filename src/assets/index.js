@@ -1,0 +1,9 @@
+export { default as Gadjetatuim } from "./images/adgetarium.png";
+export { default as Users } from "./svg/users.svg";
+export { default as CubeButton } from "./svg/cube.svg";
+export { default as BasketHeader } from "./svg/basket.svg";
+export { default as Faceebok } from "./svg/faceebok.svg";
+export { default as Instagram } from "./svg/instagram.svg";
+export { default as HeartHeader } from "./svg/heart.svg";
+export { default as ShoppingCard } from "./svg/shopping-cart.svg";
+export { default as Watsapp } from "./svg/watsapp.svg";
