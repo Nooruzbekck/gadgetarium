@@ -65,6 +65,11 @@ const StyledInput = styled(TextField)(({ error, type }) => ({
   display: "flex",
   justifyContent: "center",
   color: "white",
+  "& input:-webkit-autofill, & input:-webkit-autofill:hover, & input:-webkit-autofill:focus, & input:-webkit-autofill:active":
+    {
+      WebkitTransition: "color 9999s ease-out, background-color 9999s ease-out",
+      WebkitTransitionDelay: "9999s",
+    },
   ".MuiInputBase-input": {
     color: type === "search" ? "#FFFF" : "#91969E",
     fontSize: "16px",
@@ -77,6 +82,11 @@ const StyledInput = styled(TextField)(({ error, type }) => ({
   },
   "input[type='search']::-webkit-search-cancel-button": {
     display: "none",
+  },
+
+  "input::-webkit-outer-spin-button,input::-webkit-inner-spin-button": {
+    "-webkit-appearance": "none",
+    margin: "0",
   },
 }));
 

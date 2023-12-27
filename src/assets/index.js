@@ -1,4 +1,5 @@
 export { default as Gadjetatuim } from "./images/adgetarium.png";
+export { default as GadjetatuiLogo } from "../../public/gadgetarium-logo.png";
 export { default as Users } from "./svg/users.svg";
 export { default as CubeButton } from "./svg/cube.svg";
 export { default as BasketHeader } from "./svg/basket.svg";
